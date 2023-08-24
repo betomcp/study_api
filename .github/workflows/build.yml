@@ -26,4 +26,4 @@ jobs:
       - name: build image
         run: docker build -t betoporto/study-api .
       - name: push to docker
-        run: docker push betoporto/ping
+        run: docker push betoporto/study-api

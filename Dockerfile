@@ -17,6 +17,7 @@ FROM adoptopenjdk/openjdk11:jre-11.0.15_10-alpine
 RUN mkdir /app
 
 COPY --from=build /project/target/app.jar /app/app.jar
+COPY src/main/resources/application-dev.properties /app/application-dev.properties
 
 WORKDIR /app
 
